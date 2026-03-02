@@ -2,13 +2,14 @@
   "name": "openshw-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PrathamMittal07/openshw-backend.git"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/PrathamMittal07/openshw-backend/issues"
   },
-  "homepage": "https://github.com/PrathamMittal07/openshw-backend#readme"
+  "homepage": "https://github.com/PrathamMittal07/openshw-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.3"
+  }
 }
